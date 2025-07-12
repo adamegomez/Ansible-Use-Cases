@@ -1,94 +1,86 @@
-# Ansible-Use-Cases
-🔧 Ansible Automation – Post-Class Implementation Project
-GBA 5200 | Adam Gomez & Zachary Martin
+# ⚙️ Ansible Automation – Post-Class Implementation Project
 
-This project provides an overview of Ansible’s role in enterprise IT automation. It explains how to use Ansible for configuration management, application deployment, and network automation across distributed systems using agentless architecture.
+This project provides an overview of Ansible’s role in enterprise IT automation. It demonstrates how to use Ansible for configuration management, application deployment, and network automation across distributed systems using an agentless architecture.
 
-🎥 Video Demonstration
-Coming Soon: [YouTube Link or Upload]
+---
 
+## 🎥 Video Demonstration  
+*Coming Soon: [YouTube Link or File Upload]*
 
+---
 
-💻 Environments and Technologies Used
-Virtual Machines (e.g., Azure or local VM)
+## 💻 Environments and Technologies Used
+- **Virtual Machines** (Azure or local)
+- **SSH**: Secure remote execution
+- **Linux / Unix** (target systems)
+- **Windows 10 (for VM hosting)**
 
-SSH: Used for secure remote execution
+---
 
-Linux / Unix systems (Ansible's primary target)
+## 🛠 Technologies Covered
+- Ansible Core & Architecture
+- YAML Playbooks & Modules
+- Inventory Files & Roles
+- Ansible Automation Platform (AAP)
+- Push vs Pull Model Comparison
+- RBAC (Role-Based Access Control)
+- Ansible Galaxy & Community Collections
 
-Windows (limited) for hosting virtualized environments or targets
+---
 
-🛠 Technologies Covered
-Ansible Core & Architecture
+## 🔧 Project Scope
 
-YAML Playbooks
+### Agentless Architecture
+- Communicates via SSH — no agents required
+- Simplifies deployment and reduces overhead
 
-Ansible Modules, Roles, and Inventory
+### YAML Playbooks & Modules
+- Playbooks define automation tasks in YAML
+- Modules used:  
+  - `pip`: Manages Python dependencies  
+  - `openssh_cert`: Generates OpenSSH certificates  
+  - `oci_vn`: Oracle Cloud virtual networking
 
-Ansible Automation Platform (AAP)
+### Inventory & Playbook Structure
+- **Inventory file**: Defines target hosts/groups
+- **Tasks**: Individual actions within playbooks
+- **Roles**: Reusable bundles of tasks
 
-Push vs Pull Configuration Models
+### Ansible Automation Platform (AAP)
+- Centralized Web UI with RBAC and Analytics
+- Enterprise-ready automation at scale
 
-RBAC (Role-Based Access Control)
+---
 
-Security via SSH Keys
+## 📈 Use Cases
+- ✅ Configuration Management
+- ✅ CI/CD Pipeline Automation
+- ✅ Cloud Provisioning (AWS, Azure, GCP)
+- ✅ Security Enforcement (firewalls, policies)
+- ✅ Network Device Configuration
 
-Ansible Galaxy & Collections
+---
 
-🧩 Project Scope
-🔹 Agentless Architecture
-Ansible operates without agents, using SSH to directly connect and execute commands across multiple nodes. This removes the overhead of maintaining software on each target.
+## 🔐 Security Practices
+- SSH Key Authentication
+- Role-Based Access Control (RBAC)
+- Full logging for traceability and accountability
+- Prevents unauthorized changes to systems
 
-🔹 YAML Playbooks & Modules
-Configurations are defined in human-readable YAML files using modules like:
+---
 
-pip (Python dependencies)
+## ⚖️ Advantages & Disadvantages
 
-openssh_cert
+| ✅ Advantages | ❌ Disadvantages |
+|--------------|------------------|
+| Agentless (uses SSH) | Learning curve for advanced YAML use |
+| Simple YAML syntax | Limited Windows support |
+| Scales well across Linux systems | Performance degradation at massive scale |
+| Strong community support (Galaxy) | Heavy SSH dependency |
+| RBAC & auditing tools | AAP requires paid subscription |
 
-oci_vn (Oracle Cloud)
+---
 
-🔹 Playbook Structure
-Inventory Files: Define target hosts/groups
+## ✅ Conclusion
 
-Tasks & Roles: Modular automation logic
-
-Reusability: Via pre-defined roles and collections
-
-🔹 Automation Platform (AAP)
-Enterprise-grade automation suite
-
-Adds centralized web UI, monitoring, and RBAC
-
-Suitable for large, hybrid IT environments
-
-📈 Use Cases
-✅ Configuration Management: Keep systems consistent
-
-✅ CI/CD & App Deployment: Automate build & release
-
-✅ Cloud Provisioning: Integrate with AWS, Azure, GCP
-
-✅ Security Automation: Enforce access policies and firewall rules
-
-✅ Network Configuration: Automate routers, switches, and firewalls
-
-🔐 Security Practices
-Uses SSH key-based authentication
-
-Enforces Role-Based Access Control (RBAC)
-
-Tracks changes for auditing and accountability
-
-Leverages logging to monitor authorized changes and prevent misuse
-
-⚖️ Pros and Cons
-✅ Pros	❌ Cons
-Agentless, uses SSH	Learning curve for YAML and modules
-Simple syntax (YAML)	Less support for Windows
-Easy to scale across Linux systems	Performance drops with 1000s of devices
-Strong community (Ansible Galaxy)	Heavily depends on SSH
-RBAC and secure automation	AAP requires paid subscription
-
-✅ Conclusion
-Ansible is a powerful and lightweight tool for automating repetitive IT tasks. Its agentless, push-based model is easy to adopt and fits naturally into hybrid and cloud-first environments. With strong community support, reusable roles, and robust security features, Ansible remains a top-tier choice for modern IT automation.
+Ansible is a powerful, agentless IT automation tool that simplifies tasks such as configuration management, application deployment, and cloud orchestration. With its simple syntax, robust community, and enterprise-grade options (like AAP
