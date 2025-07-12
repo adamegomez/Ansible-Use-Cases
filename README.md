@@ -5,7 +5,7 @@ This project provides an overview of Ansible’s role in enterprise IT automatio
 ---
 
 ## 🎥 Video Demonstration  
-**YouTube**: [Ansible Lab Recording with Audio (Phase 1/1)](https://youtu.be/oyOx2LwZeOM)
+**YouTube**: [Ansible Lab Recording](https://youtu.be/oyOx2LwZeOM)
 
 ---
 
