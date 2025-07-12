@@ -6,7 +6,7 @@ This project provides an overview of Ansible’s role in enterprise IT automatio
 
 ## 🎥 Video Demonstration  
 *## 🎥 Video Demonstration  
-[▶️ Watch Demo Video](./ansible-lab-demo.mp4)*
+[![Watch on YouTube](https://img.youtube.com/vi/oyOx2LwZeOM/0.jpg)](https://youtu.be/oyOx2LwZeOM)*
 
 ---
 
